@@ -56,5 +56,5 @@ jobs:
             linux/amd64
             linux/arm64
           tags: |
-            hoppscotch/hoppscotch-frontend:latest
-            hoppscotch/hoppscotch-frontend:${{ github.ref_name }}
+            ghcr.io/greenstep-infra/hoppscotch-frontend:latest
+            ghcr.io/greenstep-infra/hoppscotch-frontend:${{ github.ref_name }}
