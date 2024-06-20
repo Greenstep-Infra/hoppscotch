@@ -26,6 +26,7 @@ jobs:
         run: |
           sed -i "s|proxy.hoppscotch.io|pm-p.develop.gs|g"  ./packages/hoppscotch-common/src/newstore/settings.ts
           sed -i "s|default: \"browser\"|default: \"proxy\"|g"  ./packages/hoppscotch-selfhost-web/src/main.ts
+          cp .env.example .env
     
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
