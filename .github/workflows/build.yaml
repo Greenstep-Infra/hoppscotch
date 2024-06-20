@@ -56,4 +56,4 @@ jobs:
             linux/arm64
           tags: |
             hoppscotch/hoppscotch-frontend:latest
-            hoppscotch/hoppscotch-frontend::${{ github.ref_name }}
+            hoppscotch/hoppscotch-frontend:${{ github.ref_name }}
