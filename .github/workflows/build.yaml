@@ -38,11 +38,11 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@v4
-        with:
-          images: ghcr.io/amoniacou/cloud-native-pg-postgresql-with-timescaledb
+      # - name: Extract metadata (tags, labels) for Docker
+      #   id: meta
+      #   uses: docker/metadata-action@v4
+      #   with:
+      #     images: ghcr.io/greenstep-infra/hoppscotch
 
       - name: Build and push the frontend image
         uses: docker/build-push-action@v4
